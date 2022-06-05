@@ -11,6 +11,7 @@ import { parseCookie } from "../redux/additionals";
 
 const store = createStore(appReducer,
     applyMiddleware(thunk)
+    
 )
 const {refreshToken} = parseCookie(document.cookie)
 const accessToken = localStorage.getItem("accessToken")
